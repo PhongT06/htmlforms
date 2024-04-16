@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Homework Assignment</title>
+</head>
+<body>
+    
+    <header>
+        <h1><strong>1. Exploring New HTML5 Input Types</strong></h1>
+    </header>
+    <main>
+        <h3>Task 1: Implementing Email Input</h3>
+        <form action="/submit" method="POST">
+            <label for="email">Email (required):</label>
+            <input type="email" name="email" placeholder="Email Here" required>
+            <button type="submit">Submit</button>
+            <div role="alert" aria-live="assertive">Please enter valid email:</div>
+        <br>
+        <hr>
+
+            <h3>Task 2: Utilizing Number Input</h3>
+            <label for="number">Number (required):</label>
+            <input type="number" name="number" placeholder="Number Here" min="1" max="100" step="1" autocomplete="on" required>
+            <div role="alert" aria-live="assertive">Please enter a number from (1-100):</div>
+        <br>
+        <hr>
+
+            <h3>Task 3: Employing Date Input</h3>
+            <label for="date">Date:</label>
+            <input type="date" name="date">
+            <div role="alert" aria-live="assertive">Please select a date:</div>
+        <br>
+        <hr>
+
+            <h3>Task 4: Enhancing User Experience with Range Input</h3>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name='quantity' min="10" max="100" step="5" autocomplete="on">
+            <div role="alert" aria-live="assertive">Please enter a number from (10-100):</div>
+
+        </form>
+        <br>
+        <hr>
+
+        <form>
+            <h3>(BONUS) Task 5: Capturing Color with Color Input</h3>
+            <label for="color">Select a Color:</label>
+            <input type="color" id="color" name="color" placeholder="Select a color" value="#ff0000">        
+          </form>
+    </main>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <header><h1>2. Building a Comprehensive Web Form</h1></header>
+    <main>
+        <h3>Task 1: Creating a Selection Experience</h3>
+
+        <form>
+            <label for="programming-language"><b>(BONUS) Favorite Programming Language:</b></label>
+            <select id="programming-language" name="programming-language" aria-labelledby="programming-language-label">
+              <option value="javascript">JavaScript</option>
+              <option value="python">Python</option>
+              <option value="java">Java</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+            </select>
+            <label id="programming-language-label" hidden>Favorite Programming Language:</label>
+        <br>    
+        <br>
+
+        <form action="/submit" method="POST">
+            <label for="language"><b>Level of Expertise:</b></label>
+            <input type="radio" name="language" value="Beginner">
+            <label for="language">Beginner</label>
+            <input type="radio" name="language" value="Intermediate">
+            <label for="language">Intermediate</label>
+            <input type="radio" name="language" value="Advanced">
+            <label for="language">Advanced</label>
+            <input type="radio" name="language" value="Master">
+            <label for="language">Master</label>
+            <div role="alert" aria-live="assertive"></div>
+        <br>
+            <label for="language"><b>Preferred Development Platforms:</b></label>
+            <input type="checkbox" id="web" name="platform" value="web">
+            <label for="web">Web</label> 
+            <input type="checkbox" id="mobile" name="platform" value="mobile">
+            <label for="mobile">Mobile</label>
+            <input type="checkbox" id="desktop" name="platform" value="desktop">
+            <label for="desktop">Desktop</label>
+
+          </form>
+    </main>
+        <br>
+        <br>
+        <br>
+    <footer>
+        <p>&copy; CopyRight 2024 Phong Truong</p>
+    </footer>
+    
+</body>
+</html>
